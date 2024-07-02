@@ -333,8 +333,6 @@ const output = persons.map((persons) => {
 
 console.log(output); */
 
-let ligthMode = false;
-let darkMode = document.createElement.Class('darkMode');
 
 
 /* function createTable() {
@@ -358,7 +356,7 @@ const table = document.createElement('table');
   blockchainDisplay.appendChild(table);
 } */
 
-  let persons = [
+/*   let persons = [
     { name: 'John', age: 20 },
     { name: 'Anna', age: 43 },
     { name: 'Stan', age: 33 }
@@ -371,4 +369,28 @@ for (let i = 0; i < persons.length; i++) {
 };
 
 // Log the length of the array
-console.log("Total number of persons: " + persons.length);
+console.log("Total number of persons: " + persons.length); */
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the button element
+  let toggleButton = document.getElementById('toggleDarkmode');
+
+  // Function to toggle between dark and light mode
+  function toggleDarkLightMode() {
+      let body = document.body;
+
+      // Check if dark mode is currently enabled
+      if (body.classList.contains('dark-mode')) {
+          // Switch to light mode
+          body.classList.remove('dark-mode');
+          body.classList.add('light-mode');
+      } else {
+          // Switch to dark mode
+          body.classList.remove('light-mode');
+          body.classList.add('dark-mode');
+      }
+  }
+
+  // Add an event listener to the button
+  toggleButton.addEventListener('click', toggleDarkLightMode);
+});
