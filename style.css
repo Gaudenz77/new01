@@ -1,0 +1,56 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Light mode styles */
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+#frameOne {
+    width: 10rem;
+    height: 10rem;
+    background-color: black;
+    border: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative; /* Ensures positioning context for absolute children */
+  }
+  
+  .circle {
+    width: 5rem; /* Diameter of the circle */
+    height: 5rem; /* Diameter of the circle */
+    background-color: red;
+    border-radius: 50%; /* Makes the div a circle */
+    position: absolute; /* Allows positioning within the parent frame */
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Offsets to center within parent */
+  }
+
+  .circleTwo {
+    width: 2rem; /* Diameter of the circle */
+    height: 2rem; /* Diameter of the circle */
+    background-color: yellow;
+    border-radius: 50%; /* Makes the div a circle */
+    position: absolute; /* Allows positioning within the parent frame */
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Offsets to center within parent */
+    z-index:3;
+  }
+  
+  
