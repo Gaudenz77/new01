@@ -18,11 +18,15 @@
       </script>
 </head>
 <body class="">
+
+
     <div class="container">
         <div class="row mt-4">
             <div class="col-4 bg-danger">left</div>
             <div class="col-4 bg-info  text-center">
-                <div id="frameOne">
+                <input type="button" value="Change this document." onclick="change()" />
+                <h2>Header</h2>
+                <p>Paragraph</p>                <div id="frameOne">
                     <button class="btn btn-dark" id="toggleDarkmode">dark / light</button>
                 </div>
 
@@ -47,8 +51,9 @@
 
 
 
-            <div class="class" onload="newContent();">
-                <p>Some original document content.</p>
+            <div class="class">
+                <input type="button" class="btn btn-danger" value="Generate a table" onclick="generateTable()" />
+
             </div>
         </div>
     </div>
