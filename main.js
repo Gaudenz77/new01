@@ -394,3 +394,5 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add an event listener to the button
   toggleButton.addEventListener('click', toggleDarkLightMode);
 });
+
+
