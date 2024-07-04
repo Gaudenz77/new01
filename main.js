@@ -220,7 +220,7 @@ console.log(eightBall); */
 /* let myText = document.getElementById("myTextDiv");
 let myButton = document.getElementById("myButtonDiv");
 
-const textOne = "<h2>Hello, Hello!</h2>";
+const textOne = "<h2 class='bg-danger'>Hello, Hello!</h2>";
 const textTwo = "<h2>Goodbye, Goodbye!</h2>";
 
 let isText = true;
@@ -237,6 +237,12 @@ function toggleText () {
 
 myButton.addEventListener('click', toggleText); */
 
+
+/**
+ * moving circles like ball with gravity parameter
+ * 
+ * 
+ */
 /* 
 // Get references to the circle elements
 let circle1 = document.getElementById('circle1');
@@ -322,16 +328,7 @@ function moveCircles() {
 setInterval(moveCircles, 16);
  */
 
-/* const persons = [
-  { name:"John", age: 20},
-  { name:"Mary", age: 22}
-];
 
-const output = persons.map((persons) => {
-  return `${persons.name} is ${persons.age} old.`
-});
-
-console.log(output); */
 
 
 
@@ -456,3 +453,45 @@ function generateTable() {
   // sets the border attribute of tbl to '2'
   tbl.setAttribute("border", "2");
 }
+
+
+/**
+ * 
+ * INPUT OUTPUT
+ */
+/* function constructOutput(input) {
+  let result ='';
+  let count = 1;
+
+  for ( let i = 0; i < input.length; i++) {
+    if (input[i] === input[i+1]) {
+      count++; 
+
+    } else {
+      result += input[i] + count;
+      count = 1;
+    }
+  }
+  return result;
+};
+
+let inputString = "aaabbcc";
+let constructedOutput = constructOutput(inputString);
+
+console.log(constructedOutput); */
+
+
+/**
+ * 
+ * array test
+ */
+/* const persons = [
+  { name:"John", age: 20},
+  { name:"Mary", age: 22}
+];
+
+const output = persons.map((persons) => {
+  return `${persons.name} is ${persons.age} old.`
+});
+
+console.log(output); */
