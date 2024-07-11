@@ -243,6 +243,7 @@ myButton.addEventListener('click', toggleText); */
  * 
  * 
  */
+// ----------------------------------------------------------------
 /* 
 // Get references to the circle elements
 let circle1 = document.getElementById('circle1');
@@ -325,9 +326,10 @@ function moveCircles() {
 } 
 
 // Set an interval to move the circles every millisecond (16ms = ~60fps)
-setInterval(moveCircles, 16);
- */
+setInterval(moveCircles, 16); */
 
+
+// ----------------------------------------------------------------
 
 
 
@@ -368,7 +370,7 @@ for (let i = 0; i < persons.length; i++) {
 // Log the length of the array
 console.log("Total number of persons: " + persons.length); */
 
-document.addEventListener('DOMContentLoaded', function() {
+/* document.addEventListener('DOMContentLoaded', function() {
   // Get the button element
   let toggleButton = document.getElementById('toggleDarkmode');
 
@@ -452,14 +454,14 @@ function generateTable() {
   document.body.appendChild(tbl);
   // sets the border attribute of tbl to '2'
   tbl.setAttribute("border", "2");
-}
+} */
 
 
 /**
  * 
  * INPUT OUTPUT
  */
-/* function constructOutput(input) {
+function constructOutput(input) {
   let result ='';
   let count = 1;
 
@@ -475,10 +477,10 @@ function generateTable() {
   return result;
 };
 
-let inputString = "aaabbcc";
+let inputString = "aaaabbcc";
 let constructedOutput = constructOutput(inputString);
 
-console.log(constructedOutput); */
+console.log(constructedOutput);
 
 
 /**
