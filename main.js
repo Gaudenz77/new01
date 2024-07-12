@@ -461,7 +461,7 @@ function generateTable() {
  * 
  * INPUT OUTPUT
  */
-function constructOutput(input) {
+/* function constructOutput(input) {
   let result ='';
   let count = 1;
 
@@ -480,7 +480,7 @@ function constructOutput(input) {
 let inputString = "aaaabbcc";
 let constructedOutput = constructOutput(inputString);
 
-console.log(constructedOutput);
+console.log(constructedOutput); */
 
 
 /**
@@ -497,3 +497,6 @@ const output = persons.map((persons) => {
 });
 
 console.log(output); */
+/* 
+  let constructedOutput = document.getElementById("testOutput");
+  constructOutput.innerHTML = ""; */
