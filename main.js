@@ -29,7 +29,6 @@ console.log(strTest); */
 Input: aaabbccccd
 Ouput: a3b2c4d1*/
 
-
 /* let inputString = "aaabbccccd";
 
 letcountString = inputString.length;
@@ -216,7 +215,6 @@ switch (randomNumber) {
 
 console.log(eightBall); */
 
-
 /* let myText = document.getElementById("myTextDiv");
 let myButton = document.getElementById("myButtonDiv");
 
@@ -237,11 +235,10 @@ function toggleText () {
 
 myButton.addEventListener('click', toggleText); */
 
-
 /**
  * moving circles like ball with gravity parameter
- * 
- * 
+ *
+ *
  */
 // ----------------------------------------------------------------
 /* 
@@ -328,11 +325,7 @@ function moveCircles() {
 // Set an interval to move the circles every millisecond (16ms = ~60fps)
 setInterval(moveCircles, 16); */
 
-
 // ----------------------------------------------------------------
-
-
-
 
 /* function createTable() {
 const blockchainDisplay = document.getElementById(`BlockchainDisplay`);
@@ -456,9 +449,8 @@ function generateTable() {
   tbl.setAttribute("border", "2");
 } */
 
-
 /**
- * 
+ *
  * INPUT OUTPUT
  */
 /* function constructOutput(input) {
@@ -482,9 +474,8 @@ let constructedOutput = constructOutput(inputString);
 
 console.log(constructedOutput); */
 
-
 /**
- * 
+ *
  * array test
  */
 /* const persons = [
@@ -500,3 +491,23 @@ console.log(output); */
 /* 
   let constructedOutput = document.getElementById("testOutput");
   constructOutput.innerHTML = ""; */
+
+function constructOutput(input) {
+  let result = "";
+  let count = 0;
+
+  for (let i = 0; i < input.length; i++) {
+    if (input[i] === input[i + 1]) {
+      count++;
+    } else {
+      result += input[i] + count;
+      count = 1;
+    }
+  }
+  return result;
+}
+
+let inputString = "aaaabbcc";
+let constructedOutput = constructOutput(inputString);
+
+console.log(constructedOutput);
