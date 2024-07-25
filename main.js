@@ -112,8 +112,8 @@ console.log(myconstructedOutput); */
 
 /* let myWord = "abcdefghijklmnopqrstuvwxyz";
 console.log(myWord.toUpperCase()); */
-
-/* document.addEventListener('DOMContentLoaded',  () => {
+/* 
+document.addEventListener('DOMContentLoaded',  () => {
   
   const frame = document.getElementById('frameOne');
 
@@ -128,9 +128,9 @@ console.log(myWord.toUpperCase()); */
   frame.appendChild(circle).style.top = "300px";
   frame.appendChild(circleTwo).style.left = "300px";
   frame.appendChild(circleTwo).style.top = "300px";
-}); */
+});
 
-/* var leftPos = 300;
+var leftPos = 300;
 var start = function() {
   moveCircle = setInterval(move, 10);
 }
@@ -147,8 +147,8 @@ function move() {
     clearInterval(moveCircle); }
    
 } */
-/*
-let myText = document.getElementById('textOne');
+
+/* let myText = document.getElementById('textOne');
 let myButton = document.getElementById('btnOne');
 
 const textOne = "<h1 class='text-danger'>Hello World!</h1>";
@@ -165,9 +165,9 @@ function toggleText() {
   isTextOne = !isTextOne; // Toggle the flag
 };
 
-myButton.addEventListener('click', toggleText); */
+myButton.addEventListener('click', toggleText);
 
-/* let userName = " ";
+let userName = " ";
 userName ? console.log("Hello " + userName + "!") : console.og("Hello!");
 
 let userQuestion = " ";
@@ -213,9 +213,9 @@ switch (randomNumber) {
   break;
 }
 
-console.log(eightBall); */
+console.log(eightBall);
 
-/* let myText = document.getElementById("myTextDiv");
+let myText = document.getElementById("myTextDiv");
 let myButton = document.getElementById("myButtonDiv");
 
 const textOne = "<h2 class='bg-danger'>Hello, Hello!</h2>";
@@ -241,9 +241,9 @@ myButton.addEventListener('click', toggleText); */
  *
  */
 // ----------------------------------------------------------------
-/* 
+
 // Get references to the circle elements
-let circle1 = document.getElementById('circle1');
+/* let circle1 = document.getElementById('circle1');
 let circle2 = document.getElementById('circle2');
 
 
@@ -271,7 +271,7 @@ function moveCircles() {
 }
 // Set an interval to move the circles every millisecond (1000ms = 1 second)
 setInterval(moveCircles,30); */
-/* 
+
 // Get references to the circle elements
 let circle1 = document.getElementById('circle1');
 let circle2 = document.getElementById('circle2');
@@ -323,7 +323,7 @@ function moveCircles() {
 } 
 
 // Set an interval to move the circles every millisecond (16ms = ~60fps)
-setInterval(moveCircles, 16); */
+setInterval(moveCircles, 20);
 
 // ----------------------------------------------------------------
 
@@ -363,7 +363,7 @@ for (let i = 0; i < persons.length; i++) {
 // Log the length of the array
 console.log("Total number of persons: " + persons.length); */
 
-/* document.addEventListener('DOMContentLoaded', function() {
+ document.addEventListener('DOMContentLoaded', function() {
   // Get the button element
   let toggleButton = document.getElementById('toggleDarkmode');
 
@@ -447,7 +447,7 @@ function generateTable() {
   document.body.appendChild(tbl);
   // sets the border attribute of tbl to '2'
   tbl.setAttribute("border", "2");
-} */
+} 
 
 /**
  *
@@ -492,22 +492,21 @@ console.log(output); */
   let constructedOutput = document.getElementById("testOutput");
   constructOutput.innerHTML = ""; */
 
-function constructOutput(input) {
-  let result = "";
-  let count = 0;
+/*   function constructOutput(input) {
+    let result = '';
+    let count = 1;
 
-  for (let i = 0; i < input.length; i++) {
-    if (input[i] === input[i + 1]) {
-      count++;
-    } else {
-      result += input[i] + count;
-      count = 1;
+    for (let i = 0; i < input.length; i++) {
+      if (input[i] === input[i+1]) {
+        count++;
+      } else {
+        result += input[i] + count;
+        count = 1;
+      }
     }
+    return result;
   }
-  return result;
-}
 
-let inputString = "aaaabbcc";
+let inputString = "aa";
 let constructedOutput = constructOutput(inputString);
-
-console.log(constructedOutput);
+console.log(constructedOutput); */

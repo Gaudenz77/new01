@@ -29,17 +29,16 @@ body {
     margin-left: auto;
     position: relative; /* Ensures positioning context for absolute children */
   }
-  
-/*   .circle {
-    width: 5rem; /* Diameter of the circle 
-    height: 5rem; /* Diameter of the circle 
-    background-color: red;
-    border-radius: 50%; /* Makes the div a circle 
-    position: absolute; /* Allows positioning within the parent frame 
-    top: 50%; /* Centers vertically 
-    left: 50%; /* Centers horizontally 
-    transform: translate(-50%, -50%); /* Offsets to center within parent 
-  } */
+  .circle {
+    width: 5rem; /* Diameter of the circle */
+    height: 5rem; /* Diameter of the circle  */
+    background-color: red; 
+    border-radius: 50%; /* Makes the div a circle */
+    position: absolute; /* Allows positioning within the parent frame */
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Offsets to center within parent */
+  } 
 
   .circleTwo {
     width: 2rem; /* Diameter of the circle */
