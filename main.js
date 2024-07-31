@@ -510,3 +510,22 @@ console.log(output); */
 let inputString = "aa";
 let constructedOutput = constructOutput(inputString);
 console.log(constructedOutput); */
+
+/* let mySpan = document.getElementById("myspan");
+
+
+function countUp() {
+  let count = parseInt(mySpan.innerHTML);
+  count += 1; //
+  mySpan.innerHTML =  count;
+} */
+
+/*   let cars = ['volvo', 'saab', 'honda'];
+
+  let text = "";
+
+  for (let i = 0; i < cars.length; i++){
+    text += cars[0] + '<br>';
+  };
+
+  document.getElementById("demo").innerHTML = text; */
