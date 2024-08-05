@@ -118,7 +118,45 @@
       </div>
       <div class="row justify-content-center"></div>
     </div>
+
+    <div class="row justify-content-center">
+      <div class="col">
+        <h2>Add a New Item</h2>
+        <form id="addItemForm">
+            <label for="itemName">Item Name:</label><br>
+            <input type="text" id="itemName" name="itemName" required><br><br>
+    
+            <label for="itemDescription">Description:</label><br>
+            <textarea id="itemDescription" name="itemDescription" rows="4"></textarea><br><br>
+    
+            <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
   </div>
+
+  <script>
+    document.getElementById('addItemForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const formData = new FormData(this);
+        
+        fetch('http://localhost:3001/items', { // Update the port number here
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+            alert('Item added successfully!');
+            this.reset();
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            alert('Error adding item. Please try again.');
+        });
+    });
+</script>
 
   <script src="main.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
