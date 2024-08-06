@@ -282,6 +282,3 @@ mySecondBtn.addEventListener("click", toggleDiv);
 
 
 /* node.js --------------------------------*/
-
-
-
