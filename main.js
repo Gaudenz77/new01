@@ -263,6 +263,7 @@ console.log(constructedOutput);
 
 let mySecondBtn = document.getElementById("mySecondBtn");
 let myNewDiv = document.getElementById("myNewDiv");
+myNewDiv.innerHTML = "<h1 class=''></h1>";
 /* 
 let isTrue = true;
 isTrue = !isTrue; */
@@ -282,3 +283,24 @@ mySecondBtn.addEventListener("click", toggleDiv);
 
 
 /* node.js --------------------------------*/
+
+
+
+/* 
+function compressOutput(input) {
+  let result = "";
+  let count = 0;
+
+  for (let i = 0; i < input.length; i++) {
+    if(input[i] === input[i+1]) {
+      count++;
+    } else {
+      result += input[i] + count;
+    }
+} return result;
+};
+
+let inputString ="aabbcccccccccccc";
+let compressedOutput = compressOutput(inputString);
+
+console.log(compressedOutput); */
