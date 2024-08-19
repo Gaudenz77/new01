@@ -149,7 +149,7 @@ function generateTable() {
 
 /*   function compressOutput(input) {
     let result = "";
-    let count = 0;
+    let count = 1;
 
     for(let i = 0; i < input.length; i++) {
       if(input[i] === input[i+1]) {
@@ -304,3 +304,25 @@ let inputString ="aabbcccccccccccc";
 let compressedOutput = compressOutput(inputString);
 
 console.log(compressedOutput); */
+
+/* ---------------------------------------------------------------- */
+
+function compressOutput(input) {
+  let result = "";
+  let count = 1;
+
+  for (let i = 0; i < input.length; i++) {
+    if (input[i] === input[i + 1]) {
+      count++;
+    } else {
+      result += input[i] + count;
+      count = 1;
+    }
+  }
+  return result;
+}
+
+let inputStringThree = "gaudenz";
+let compressedOutput = compressOutput(inputStringThree);
+
+console.log(compressedOutput);
