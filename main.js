@@ -326,3 +326,4 @@ let inputStringThree = "gaudenz";
 let compressedOutput = compressOutput(inputStringThree);
 
 console.log(compressedOutput);
+
