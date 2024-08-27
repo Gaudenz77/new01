@@ -1,3 +1,5 @@
 
 Input: aaabbccccd
 Ouput: a3b2c4d1
+
+<script></script>
